@@ -100,7 +100,7 @@ fun TataletakRowColumn(modifier: Modifier) {
 @Composable
 fun TataLetakBoxColumnRow(modifier: Modifier) {
 
-    val gambar = painterResource(id = R.drawable.notasbalok)
+    val gambar = painterResource(id = R.drawable.freepalestine)
 
     Column(
         modifier = modifier
@@ -135,7 +135,17 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 painter = gambar,
                 contentDescription = null,
                 contentScale = ContentScale.Fit)
-
+            Text(
+                text = "My Music",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(alignment = Alignment.Center)
+            )
+        }
+    }
+}
 
 
 
