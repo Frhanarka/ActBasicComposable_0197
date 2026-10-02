@@ -96,3 +96,25 @@ fun TataletakRowColumn(modifier: Modifier) {
         }
     }
 }
+
+@Composable
+fun TataLetakBoxColumnRow(modifier: Modifier) {
+
+    val gambar = painterResource(id = R.drawable.notasbalok)
+
+    Column(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(300.dp)
+            .background(color = Color.Cyan),
+        horizontalAlignment = Alignment.CenterHorizontally) {
+        Column() {
+            Row(
+                modifier = modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly) {
+                Text(text = "Col1_Row1_Komponen1")
+                Text(text = "Col1_Row1_Komponen2")
+                Text(text = "Col1_Row1_Komponen3")
+
+
+
