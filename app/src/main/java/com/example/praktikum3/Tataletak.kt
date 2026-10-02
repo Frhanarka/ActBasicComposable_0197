@@ -124,13 +124,17 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 Text(text = "Col1_Row2_Komponen3")
             }
         }
-        Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.height(10.dp))
         Box(
             modifier = modifier
                 .fillMaxWidth()
                 .height(300.dp)
                 .background(color = Color.Cyan),
             contentAlignment = Alignment.Center) {
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit)
 
 
 
