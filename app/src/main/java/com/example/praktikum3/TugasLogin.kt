@@ -26,5 +26,19 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun LayarLogin(modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize()) {
+        LatarGambar()
     }
 }
+
+@Composable
+fun LatarGambar() {
+    val gambarLatar = painterResource(id = R.drawable.freepalestine)
+
+    Image(
+        painter = gambarLatar,
+        contentDescription = "Background",
+        contentScale = ContentScale.Crop,
+        modifier = Modifier.fillMaxSize()
+    )
+}
+
