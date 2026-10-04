@@ -6,10 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.activity.enableEdgeToEdge
 import com.example.praktikum3.ui.theme.Praktikum3Theme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +19,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
-                    TataLetakBoxColumnRow(
+                    LayarLogin(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
