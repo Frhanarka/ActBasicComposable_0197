@@ -55,6 +55,8 @@ fun KontenLogin() {
         LogoGambar()
         Spacer(modifier = Modifier.height(60.dp))
         DataMahasiswa()
+        Spacer(modifier = Modifier.height(30.dp))
+        FotoProfil()
     }
 }
 
@@ -130,6 +132,8 @@ fun FotoProfil() {
         )
     }
 }
+
+
 
 
 
