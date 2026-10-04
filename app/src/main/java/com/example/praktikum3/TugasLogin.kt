@@ -52,3 +52,19 @@ fun KontenLogin() {
         Spacer(modifier = Modifier.height(70.dp))
     }
 }
+
+@Composable
+fun HeaderJudul() {
+    Text(
+        text = "Login",
+        fontSize = 32.sp,
+        fontWeight = FontWeight.Bold,
+        color = Color.Blue
+    )
+
+    Text(
+        text = "Ini adalah halaman login,",
+        fontSize = 14.sp,
+        color = Color.White
+    )
+}
