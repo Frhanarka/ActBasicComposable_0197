@@ -53,6 +53,8 @@ fun KontenLogin() {
         HeaderJudul()
         Spacer(modifier = Modifier.height(40.dp))
         LogoGambar()
+        Spacer(modifier = Modifier.height(60.dp))
+        DataMahasiswa()
     }
 }
 
@@ -106,3 +108,28 @@ fun DataMahasiswa() {
         color = Color.Black
     )
 }
+
+@Composable
+fun FotoProfil() {
+    val gambarProfil = painterResource(id = R.drawable.bersatu)
+
+    Box(
+        modifier = Modifier
+            .size(220.dp)
+            .clip(CircleShape)
+            .background(Color.White),
+        contentAlignment = Alignment.Center
+    ) {
+        Image(
+            painter = gambarProfil,
+            contentDescription = "Foto Profil",
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .fillMaxHeight()
+                .width(150.dp)
+        )
+    }
+}
+
+
+
