@@ -51,6 +51,8 @@ fun KontenLogin() {
     ) {
         Spacer(modifier = Modifier.height(70.dp))
         HeaderJudul()
+        Spacer(modifier = Modifier.height(40.dp))
+        LogoGambar()
     }
 }
 
@@ -78,5 +80,29 @@ fun LogoGambar() {
         painter = gambarLogo,
         contentDescription = "Logo",
         modifier = Modifier.size(130.dp)
+    )
+}
+
+@Composable
+fun DataMahasiswa() {
+    Text(
+        text = "Nama",
+        fontSize = 16.sp,
+        fontWeight = FontWeight.Bold,
+        color = Color.Red
+    )
+
+    Text(
+        text = "Farhan ganteng",
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Bold,
+        color = Color.Blue
+    )
+
+    Text(
+        text = "20240140197",
+        fontSize = 24.sp,
+        fontWeight = FontWeight.Bold,
+        color = Color.Black
     )
 }
