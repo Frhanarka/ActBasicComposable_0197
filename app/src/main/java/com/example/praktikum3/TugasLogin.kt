@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.sp
 fun LayarLogin(modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize()) {
         LatarGambar()
+        KontenLogin()
     }
 }
 
@@ -42,3 +43,12 @@ fun LatarGambar() {
     )
 }
 
+@Composable
+fun KontenLogin() {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Spacer(modifier = Modifier.height(70.dp))
+    }
+}
