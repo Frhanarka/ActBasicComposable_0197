@@ -50,6 +50,7 @@ fun KontenLogin() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(modifier = Modifier.height(70.dp))
+        HeaderJudul()
     }
 }
 
@@ -66,5 +67,16 @@ fun HeaderJudul() {
         text = "Ini adalah halaman login,",
         fontSize = 14.sp,
         color = Color.White
+    )
+}
+
+@Composable
+fun LogoGambar() {
+    val gambarLogo = painterResource(id = R.drawable.logoumy)
+
+    Image(
+        painter = gambarLogo,
+        contentDescription = "Logo",
+        modifier = Modifier.size(130.dp)
     )
 }
